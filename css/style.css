@@ -1,0 +1,954 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ######### all common css end ############### */
+
+/* ######################### logobar and banner start ############################# */
+#logobarandbanner{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.lbar{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8519607672170431) 37%, rgba(3,3,3,0) 96%);
+}
+
+.logoandbannercontainer{
+    position: relative;
+    height: 100%;
+}
+
+.logoandmenubar{
+   position: relative;
+   height: 180px;
+   width: 100%;
+   top: 0;
+}
+.logo{
+   position: absolute;
+   width:20%;
+   height: 100%;
+  
+}
+#ltxt{
+    position: absolute;
+    line-height: 180px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 75px;
+}
+.menu{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    
+    right: 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 180px;
+    margin-left: 70px;
+    position: relative;
+}
+
+.menu ul li a{
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    /* font-weight: bold; */
+}
+.menu ul li a:hover{
+    border-bottom: 3px solid white ;
+}
+.logoandbannercontainer h1{
+    color: white;
+     margin-top: 30px;
+    font-size: 75px;
+    
+}
+.logoandbannercontainer p{
+    color: white;
+    margin-top: 70px;
+    font-size: 20px;
+}
+#bannerbtn{
+    margin-top: 95px;
+}
+#bannerbtn a{
+    padding: 15px 50px;
+    background-color: #f64b3c;
+    color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+#bannerbtn a:hover{
+    color:#f64b3c ;
+    background-color: white;
+}
+/* ######################### logobar and banner end ############################# */
+
+/* ############################## our chef start ################################### */
+#ourchef{
+    width: 100%;
+    height: 800px;
+    background-color: #f6eedf;
+}
+.chefcontainer{
+    height: 100%;
+    position: relative;
+}
+.bgpic{
+    position: absolute;
+    animation: chef 5s ease-in infinite;
+    -webkit-animation: chef 5s ease-in infinite;
+}
+@keyframes chef{
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+}
+.bgpic1{
+    right: 0;
+    top: 110px;
+}
+.bgpic2{
+    bottom: 225px;
+    right: -50px;
+}
+.bgpic3{
+    top: 286px;
+    left: -53px;
+}
+.bgpic4{
+    top: 100px;
+    left: 80px;
+}
+.bgpic5{
+    bottom: 34px;
+    left: 370px;
+}
+.bgpic6{
+    bottom: 40px;
+    right: 420px;
+}
+.cheftxt{
+    position: absolute;
+    width: 100%;
+    height: 35%;
+   
+    top: 0;
+    text-align: center;
+}
+.cheftxt h1{ 
+    color: #f64b3c;
+    font-size: 60px;
+    margin-top: 60px;
+}
+.cheftxt p{
+    margin-top: 30px;
+    color: #f64b3c;
+    font-size: 20px;
+}
+.chefimg{
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.chefimginner{
+    width: 32%;
+    
+    text-align: center;
+}
+.chefpic{
+      margin-top: 65px;
+}
+.chefimginner h1{
+        margin-top: 15px;
+        
+}
+.chefimginner h1 a{
+    color: #f64b3c;
+}
+.chefimginner p{
+    margin-top: 15px;
+    color: #f64b3c;
+}
+
+/* ############################## our chef end ################################### */
+
+ /* ##################################### best burger start ############################### */
+#bestburger{
+    width: 100%;
+    height: 800px;
+    background-color: #f64b3c;
+}
+.bestburgercontainer{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  
+
+}
+.bestburgerinner{
+    width: 48%;
+    height: 100%;
+    
+}
+.bestburgerinner2 h1{
+    color: white;
+    font-size: 60px;
+    margin-top: 255px;
+}
+.bestburgerinner2 p{
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+}
+.bestburgerinner2 .bestburgerbtn{
+    margin-top: 102px;
+} 
+.bestburgerinner2 .bestburgerbtn a{
+   padding: 15px 50px;
+   background-color: white;
+   color: #f64b3c;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+   transition: 0.3s ease-in;
+   -webkit-transition: 0.3s ease-in;
+   -moz-transition: 0.3s ease-in;
+   -ms-transition: 0.3s ease-in;
+   -o-transition: 0.3s ease-in;
+}
+.bestburgerinner1 img{
+    margin-top: 190px;
+}
+.bestburgerinner2 .bestburgerbtn a:hover{
+        background-color: #f64b3c;
+        color: white;
+}
+
+ /* ##################################### best burger end ############################### */
+
+ /* ############################### big burger start #################################  */
+#bigburger{
+    width: 100%;
+    height: 800px;
+    background-color: #f6eedf;
+}
+.bigburgercontainer{
+    position: relative;
+    height: 100%;
+
+}
+.bggpic{
+    position: absolute;
+    animation: chef 5s ease-in infinite;
+    -webkit-animation: cheff 5s ease-in infinite;
+}
+@keyframes cheff{
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+}
+.bggpic1{
+    right: -105px;
+    top: 110px;
+}
+.bggpic2{
+    bottom: 225px;
+    right: -50px;
+}
+.bggpic3{
+    top: 286px;
+    left: -133px;
+}
+.bggpic4{
+    top: 100px;
+    left: 80px;
+}
+.bggpic5{
+    bottom: 34px;
+    left: 230px;
+}
+.bggpic6{
+    bottom: 40px;
+    right: 420px;
+}
+.bigburgerinside{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.bigburgerinner{
+    height: 100%;
+    width: 48%;
+    
+}
+.bigburgerinner2 h1{
+    color: #f64b3c;
+    font-size: 60px;
+    margin-top: 255px;
+}
+.bigburgerinner2 p{
+    font-size: 20px;
+    color: #f64b3c;
+    margin-top: 40px;
+}
+.bigburgerinner2 .bigburgerbtn{
+    margin-top: 102px;
+} 
+.bigburgerinner2 .bigburgerbtn a{
+   padding: 15px 50px;
+   background-color: #f64b3c;
+   color: white;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+   transition: 0.3s ease-in;
+   -webkit-transition: 0.3s ease-in;
+   -moz-transition: 0.3s ease-in;
+   -ms-transition: 0.3s ease-in;
+   -o-transition: 0.3s ease-in;
+}
+.bigburgerinner1 img{
+    margin-top: 190px;
+}
+.bigburgerinner2 .bigburgerbtn a:hover{
+        background-color: transparent;
+        color: #f64b3c;
+}
+ /* ################################ big burger end ################################## */
+
+ /* ################################## statistics start ###################################### */
+ #statistic{
+     width: 100%;
+     height: 800px;
+     background-color: #f64b3c;
+ }
+ .statisticcontainer{
+     position: relative;
+     height: 100%;
+    
+ }
+ .statisticstxt{
+     position: absolute;
+     width: 100%;
+     height: 35%;
+    
+     top: 0;
+     text-align: center;
+
+ }
+ .statisticstxt h1{
+     font-size: 60px;
+     color: white;
+     margin-top: 60px;
+ }
+ .statisticstxt p{
+     font-size: 20px;
+     color: white;
+     margin-top: 15px;
+ }
+ .statisticscircle{
+    position: absolute;
+    width: 100%;
+    height: 65%;
+  
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.circle{
+    width: 320px;
+    height: 320px;
+    background-color: #f64b3c;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 45px;
+    border: 5px solid white;
+    text-align: center;
+    animation: circle 4s ease-in infinite;
+    -webkit-animation: circle 4s ease-in infinite;
+}
+@keyframes circle{
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+}
+.circle h1{
+    font-size: 80px;
+    color: white;
+    margin-top: 90px;
+}
+.circle h3{
+    font-size: 25px;
+    color: white;
+    
+}
+ /* #################################### statistic end ################################## */
+
+ /* ############################################# populer package start ######################### */
+ #package{
+     width: 100%;
+     height: 800px;
+     background-color: #f6eedf;
+ }
+ .packagecontainer{
+    position: relative; 
+    height: 100%;
+ }
+ .packagetxt{
+    position: absolute;
+    top: 0;
+   
+    width: 100%;
+    height: 35%;
+    text-align: center;
+ }
+ .packagetxt h1{
+     font-size: 65px;
+     color: #f64b3c;
+     line-height: 280px;
+ }
+ .packageitems{
+     width: 100%;
+     position: absolute;
+     
+     height: 65%;
+     bottom: 0;
+     display: flex;
+     justify-content: space-around;
+ }
+ .iteminner{
+     width: 28%;
+     height: 75%;
+     background-color:white;
+     text-align: center;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+     transition: 0.3s ease-in;
+     -webkit-transition: 0.3s ease-in;
+     -moz-transition: 0.3s ease-in;
+     -ms-transition: 0.3s ease-in;
+     -o-transition: 0.3s ease-in;
+}
+.iteminner:hover{
+    box-shadow: 0 0 20px black;
+}
+.iteminner h1{
+    color: #f64b3c;
+    margin-top: 30px;
+}
+.iteminner img{
+    margin-top: 30px;
+}
+.iteminner h2{
+    margin-top: 25px;
+    color: #f64b3c;
+}
+.iteminner p{
+    margin-top: 15px;
+    color: #f64b3c;
+}
+ .bgggpic{
+    position: absolute;
+    animation: cheff 5s ease-in infinite;
+    -webkit-animation: cheff 5s ease-in infinite;
+}
+#itmbtn{
+    margin-top: 23px;
+}
+#itmbtn a{
+    padding: 15px 50px;
+    background-color: #f64b3c;
+    color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+#itmbtn a:hover{
+    background-color: white;
+    color: #f64b3c;
+}
+
+@keyframes cheff{
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+}
+.bgggpic1{
+    right: -105px;
+    top: 110px;
+}
+.bgggpic2{
+    bottom: 225px;
+    right: -50px;
+}
+.bgggpic3{
+    top: 378px;
+    left: -133px;
+}
+.bgggpic4{
+    top: 100px;
+    left: 80px;
+}
+.bgggpic5{
+    bottom: 7px;
+    left: 500px;
+}
+.bgggpic6{
+    bottom: 530px;
+    right: 420px;
+}
+ /* ############################################# populer package end ######################### */
+
+ /* ######################################## speech start ######################################## */
+ #speech{
+     height: 800px;
+     width: 100%;
+     background-image: url(../images/spoon-backgroung.png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     z-index: 9;
+ }
+ 
+ .speechcontainer{
+     height: 100%;
+     text-align: center;
+     z-index: 99;
+     position: relative;
+
+ }
+ .speechafter{
+    width: 100%;
+     height: 100%;
+     background-color: #f64c3c98;
+  }
+ .speechcontainer p{
+     color: white;
+     font-size: 27px;
+     position: absolute;
+     z-index: 999;
+     top: 350px;
+     left: 50%;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+     text-align: center;
+}
+ .speechcontainer h1{
+     color: white;
+     position: absolute;
+     font-size: 50px;
+     z-index: 99;
+     top: 492px;
+     left: 50%;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+}
+ /* ######################################## speech end ######################################## */
+
+ /* ########################################## update start ###################################### */
+ #update{
+     width: 100%;
+     height: 800px;
+     background-color: #f6eedf;
+ }
+ .updatecontainer{
+     height: 100%;
+     text-align: center;
+     position: relative;
+ }
+ .bggggpic{
+    position: absolute;
+    animation: chefff 5s ease-in infinite;
+    -webkit-animation: chefff 5s ease-in infinite;
+}
+
+
+@keyframes chefff{
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+}
+.bggggpic1{
+    right: -105px;
+    top: 110px;
+}
+.bggggpic2{
+    bottom: 225px;
+    right: -50px;
+}
+.bggggpic3{
+    top: 378px;
+    left: -133px;
+}
+.bggggpic4{
+    top: 100px;
+    left: 80px;
+}
+.bggggpic5{
+    bottom: 7px;
+    left: 500px;
+}
+.bggggpic6{
+    top: 20px;
+    right: 420px;
+}
+.updatecontainer h1{
+    font-size: 70px;
+    color: #f64b3c;
+    display: inline-block;
+    margin-top: 210px;
+    
+}
+.updatecontainer p{
+    font-size: 25px;
+    color: #f64b3c;
+    margin-top: 30px;
+}
+.updatecontainer input{
+    margin-top: 90px;
+    width: 750px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.updatecontainer a{
+    padding: 13px 40px 14px 40px ;
+    background-color: #f64b3c;
+    border-radius: 0 50px 50px 0px;
+    -webkit-border-radius: 0 50px 50px 0px;
+    -moz-border-radius: 0 50px 50px 0px;
+    -ms-border-radius: 0 50px 50px 0px;
+    -o-border-radius: 0 50px 50px 0px;
+    color: white;
+    margin-left: -20px;
+}
+ /* ############################################## update end #################################### */
+
+ /* ############################## footer start ################################ */
+#footer{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+.footercontainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer{
+    width: 49%;
+    
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+}
+.footinner{
+    width: 30%;
+    height: 100%;
+    color: white;
+   
+}
+.footer1 h1{
+    margin-top: 200px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+.footer1 p{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+}
+.footer1 ul{
+    margin-top: 50px;
+}
+.footer1 ul li{
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+    background-color:#f64b3c;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+.footer1 ul li a i{
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+.footer1 ul li:hover{
+    background-color: transparent;
+}
+.footer1 ul li:hover i{
+    color: #f64b3c;
+}
+.footinner h1{
+    margin-top: 200px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+.footinner ul{
+    margin-top: 30px;
+}
+.footinner ul li{
+    margin-top: 20px;
+}
+.footinner ul li a{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+
+/* ############################## footer end ################################ */
